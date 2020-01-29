@@ -57,7 +57,7 @@ public class Matrix2D
     }
 
     /**
-     * Element mutator.  Throws an exception of the row or column is not valid.
+     * Element mutator.  Throws an exception if the row or column is not valid.
      * 
      * @param row The row index of the element to be changed.
      * @param col The column index of the element to be changed.
@@ -103,11 +103,20 @@ public class Matrix2D
      */
     public int maxValue()
     {
-        //add your code here
-        
-        return -1;
+        int mvalue = 0;
+        for(int row = 0; row < data.length; row++)
+        {
+            for(int col = 0; col < data.length; col++)
+            {
+                if (data[row][col] > mvalue)
+                {
+                    mvalue = data[row][col];
+                }
+            }
+        }
+        return mvalue;
     }
-    
+
     /**
      *  Compare two matrices for equality.  Two matricies are equal if they have the
      *  same dimensions and the same elements at every location in the matrix.
@@ -117,7 +126,7 @@ public class Matrix2D
      *  
      *  @param other The Matrix2D object to be compared to this matrix.
      */ 
-    public boolean equals(Object other) 
+    public boolean equals(Object other)
     {
         Matrix2D otr = (Matrix2D) other;
 
@@ -125,9 +134,18 @@ public class Matrix2D
             return false;
         }
 
-        //add your code here
+        for(int col = 0; col < data.length; col++)
+        {
+            for(int row = 0; row < data.length; row++)
+            {
+                //if(data[row][col] == otr.get(row,col))
+                //{
+                //    return true;
+                //}
+            }
+        }
 
-        return true;
+        return false;
     }
 
     /**
@@ -143,15 +161,22 @@ public class Matrix2D
      *          matrix and this matrix for the same row and column
      *          indexes.
      */ 
-    public Matrix2D add(Matrix2D other) throws Matrix2DSizeMismatchException 
+    public Matrix2D add(Matrix2D other) throws Matrix2DSizeMismatchException, Matrix2DIndexOutOfBoundsException
     {    
         if (data.length != other.data.length) {
             throw new Matrix2DSizeMismatchException(data.length, other.data.length);
         }
-
-        //add your code here
+        Matrix2D secondArr = new Matrix2D(data.length);
         
-        return null;
+        for(int col = 0; col < data.length; col++)
+        {
+            for(int row = 0; row < data.length; row++)
+            {
+                secondArr.set(row, col, other.get(row,col) + data[col][row]);
+            }
+        }
+        
+        return secondArr;
     }
 
     /**
@@ -159,9 +184,16 @@ public class Matrix2D
      * 
      * @param by The amount by which the matrix is scaled.
      */
-    public void scale(int by)
+    public void scale(int by) throws Matrix2DIndexOutOfBoundsException 
     {
-        //add your code here
+        
+        for(int row = 0; row < data.length; row++)
+        {
+            for(int col = 0; col < data.length; col++)
+            {
+                set(row,col,data[row][col] * by);
+            }
+        }
     }
 
     /**
@@ -185,5 +217,22 @@ public class Matrix2D
         }
 
         return sb.toString();
+    }
+
+    public static void main(String[] args){
+
+        Matrix2D test = new Matrix2D(10);
+        Matrix2D test2 = new Matrix2D(10);
+        test.randomInit(0,15);
+        test2.randomInit(0,15);
+        System.out.println(test.toString());
+        System.out.println();
+        System.out.print(test.maxValue());
+        System.out.println();
+        System.out.println(test.toString());
+        System.out.println(test2.toString());
+        System.out.println();
+        System.out.println(test.equals(test2));
+        
     }
 }

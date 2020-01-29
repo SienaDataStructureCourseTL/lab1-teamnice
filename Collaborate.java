@@ -25,7 +25,9 @@ public class Collaborate
         
         System.out.println("And another modifies after this...");
         
-        System.out.println("git will save you from a copy and paste disaster.");
+        System.out.println("git is a bit confusing at first");
+        
+        System.out.println("#Nice");
         
     }
 }

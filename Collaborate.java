@@ -19,7 +19,9 @@ public class Collaborate
 
     public static void main(String args[]) {
      
-        System.out.println("If one modifies above this line...");
+        System.out.println("Han Solo Shot first");
+        
+        System.out.println("nice");
         
         System.out.println("And another modifies between the previous and this...");
         

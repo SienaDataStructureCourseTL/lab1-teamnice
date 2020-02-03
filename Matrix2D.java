@@ -138,14 +138,14 @@ public class Matrix2D
         {
             for(int row = 0; row < data.length; row++)
             {
-                //if(data[row][col] == otr.get(row,col))
-                //{
-                //    return true;
-                //}
+                if(data[row][col] != otr.data[row][col]) {
+                    return false;
+                }
             }
-        }
 
-        return false;
+            
+        }
+        return true;
     }
 
     /**
@@ -167,7 +167,7 @@ public class Matrix2D
             throw new Matrix2DSizeMismatchException(data.length, other.data.length);
         }
         Matrix2D secondArr = new Matrix2D(data.length);
-        
+
         for(int col = 0; col < data.length; col++)
         {
             for(int row = 0; row < data.length; row++)
@@ -175,7 +175,7 @@ public class Matrix2D
                 secondArr.set(row, col, other.get(row,col) + data[col][row]);
             }
         }
-        
+
         return secondArr;
     }
 
@@ -186,12 +186,12 @@ public class Matrix2D
      */
     public void scale(int by) throws Matrix2DIndexOutOfBoundsException 
     {
-        
-        for(int row = 0; row < data.length; row++)
+
+        for(int row = 0; row < this.data.length; row++)
         {
-            for(int col = 0; col < data.length; col++)
+            for(int col = 0; col < this.data.length; col++)
             {
-                set(row,col,data[row][col] * by);
+                 this.data[row][col] *= by;
             }
         }
     }
@@ -233,6 +233,6 @@ public class Matrix2D
         System.out.println(test2.toString());
         System.out.println();
         System.out.println(test.equals(test2));
-        
+
     }
 }

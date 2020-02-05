@@ -6,7 +6,7 @@ import java.util.Scanner;
  * dollar signs or there are more than two decimal
  * places.
  * 
- * @author 
+ * @author modified by (Bailey Cross, Amal Thomas)
  * @version Spring 2019
  */
 public class DriverPoolStudent

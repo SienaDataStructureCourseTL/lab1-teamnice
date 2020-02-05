@@ -10,7 +10,7 @@
  * entered in the select day (1-7, Sunday - Saturday)
  * and hour (0-23, military hours).
  * 
- * @author Prof. White
+ * @author Prof. White, modified by (Bailey Cross, Amal Thomas)
  * @version Spring 2019
  */
 public class Pool

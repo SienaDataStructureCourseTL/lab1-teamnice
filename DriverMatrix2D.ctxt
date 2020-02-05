@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=DriverMatrix2D
-comment0.text=\r\n\ The\ main\ method\ is\ used\ to\ test\ some\ of\ the\ \r\n\ matrix\ operations\ defined\ in\ the\ Matrix2D\r\n\ class.\r\n\ \r\n\ @author\ Jim\ Teresco,\ modified\ by\ Prof.\ White\ \r\n\ @version\ Fall\ 2019\r\n
+comment0.text=\n\ The\ main\ method\ is\ used\ to\ test\ some\ of\ the\ \n\ matrix\ operations\ defined\ in\ the\ Matrix2D\n\ class.\n\ \n\ @author\ Jim\ Teresco,\ modified\ by\ Prof.\ White\ \n\ @version\ Fall\ 2019\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 numComments=2

@@ -4,7 +4,7 @@ import java.util.Random;
  *  A class representing a square matrix with some methods to manipulate
  *  such matrices.
  *  
- * @author Jim Teresco, modified by Prof. White and (your names here)
+ * @author Jim Teresco, modified by Prof. White and (Bailey Cross, Amal Thomas)
  * @version Fall 2019
  */
 public class Matrix2D 

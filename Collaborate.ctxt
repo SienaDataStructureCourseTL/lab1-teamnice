@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Collaborate
-comment0.text=\r\n\ Git\ collaboration\ example\ for\ CSIS\ 210\r\n\r\n\ @author\ Jim\ Teresco,\ modified\ by\ group\ members\:\r\n\ \r\n\ 1)\ replace\ with\ one\ group\ member's\ name\r\n\r\n\r\n\ 2)\ replace\ with\ another\ group\ member's\ name\r\n\r\n\r\n\ 3)\ 3rd\ member\ if\ a\ group\ of\ 3\ only\r\n\ \r\n\ @version\ Fall\ 2019\r\n
+comment0.text=\n\ Git\ collaboration\ example\ for\ CSIS\ 210\n\n\ @author\ Jim\ Teresco,\ modified\ by\ group\ members\:\ Bailey\ Cross,\ Amal\ Thomas\n\ \n\ 1)\ replace\ with\ one\ group\ member's\ name\n\n\n\ 2)\ replace\ with\ another\ group\ member's\ name\n\n\n\ 3)\ 3rd\ member\ if\ a\ group\ of\ 3\ only\n\ \n\ @version\ Fall\ 2019\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 numComments=2

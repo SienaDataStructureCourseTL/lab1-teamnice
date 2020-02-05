@@ -2,7 +2,7 @@
 /**
  * Git collaboration example for CSIS 210
  *
- * @author Jim Teresco, modified by group members:
+ * @author Jim Teresco, modified by group members: Bailey Cross, Amal Thomas
  * 
  * 1) replace with one group member's name
  *
